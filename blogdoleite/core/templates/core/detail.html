@@ -1,0 +1,14 @@
+{% extends './base.html' %}
+{%block content%}
+
+     <section class="section">
+        <h1 class="title">{{post.title}}</h1> <!--Entra dentro do objeto Post-->
+        <div class="wysiwyg">
+        {{post.content|safe}} <!--Se não tiver a tag pipe,"|", o texto aparecerá com formatações html-->
+        </div>
+    </section>
+
+
+{%endblock%}
+  
+  
