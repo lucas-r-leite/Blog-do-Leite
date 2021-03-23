@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{%static 'core/bulma.css'%}">
     <link rel="stylesheet" href="{%static 'core/footer.css'%}">
     <link rel="stylesheet" href="{%static 'core/wysiwyg.css'%}">
+    <link rel="stylesheet" href="{%static 'core/card.css'%}">
     <title>Blog do Leite</title>
 
 </head>
@@ -19,6 +20,12 @@
         <p class="subtitle has-text-centered">
         Blog criado no tutorial de Django
         </p>
+        </div>
+        <div class="card"> <!--Cria um menu para navegação-->
+            <footer class="card-footer">
+                <a href="{% url 'core:index' %}" class="card-footer-item"><strong>Posts</strong></a>
+                <a href="{% url 'about:about_index' %}" class="card-footer-item"><strong>About</strong></a>
+            </footer>
         </div>
     </section>
 
