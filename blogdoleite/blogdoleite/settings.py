@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core', #Todas as aplicações têm que serem adicionadas nesta lista
     'ckeditor', #Editor CK
+    'about',
 ]
 
 MIDDLEWARE = [

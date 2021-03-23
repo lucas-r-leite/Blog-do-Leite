@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('core.urls',namespace='core'))#Página incial. Importa o arquivo url dentro do diretório core
+    path('',include('core.urls',namespace='core')),#Página incial. Importa o arquivo url dentro do diretório core
+    path("about/", include('about.urls', namespace="about"))
 ]
